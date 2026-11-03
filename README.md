@@ -26,4 +26,4 @@ Execute `python3 -m http.server 8080 --directory /workspace/EbookADM` e confira 
 
 ## Pagamento
 
-Os botões de compra nas duas páginas levam ao checkout Kiwify: https://pay.kiwify.com.br/cRhBmbk. O pagamento e a entrega do produto devem estar configurados na Kiwify.
+Nas duas páginas, os botões de chamada levam à seção `#oferta`. Apenas o botão principal “Comprar agora” dentro dessa seção abre o checkout Kiwify: https://pay.kiwify.com.br/cRhBmbk. O pagamento e a entrega do produto devem estar configurados na Kiwify.
