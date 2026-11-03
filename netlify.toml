@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/administracao-com-ia-pagina-de-vendas.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/administracao-com-ia"
+  to = "/"
+  status = 301
