@@ -26,4 +26,4 @@ Execute `python3 -m http.server 8080 --directory /workspace/EbookADM` e confira 
 
 ## Pagamento
 
-O HTML original não contém um link de pagamento. Configure `CHECKOUT_URL` no `index.html` com a URL real do checkout antes de começar a vender. Até isso acontecer, os botões levam à seção de oferta e não processam pagamentos.
+Os botões de compra nas duas páginas levam ao checkout Kiwify: https://pay.kiwify.com.br/cRhBmbk. O pagamento e a entrega do produto devem estar configurados na Kiwify.
