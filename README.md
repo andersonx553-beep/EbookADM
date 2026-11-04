@@ -1,29 +1,21 @@
-# Administração com IA na Prática
+# Administração com IA na Prática • Lia
 
-Página estática, sem dependências e sem etapa de compilação.
+Página de vendas atualizada enviada pelo usuário. Há uma única página pública, `index.html`, com estilos e imagens incorporados. Fontes são carregadas pelo Google Fonts.
 
-## Arquivos e caminhos
+## Navegação e pagamento
 
-- `index.html`: página inicial; edite este arquivo para atualizar o site.
-- `administracao-com-ia-pagina-de-vendas.html`: arquivo original enviado, preservado.
-- Imagens e estilos estão incorporados no HTML. Apenas as fontes usam Google Fonts.
+Chamadas do cabeçalho, conteúdo e barra móvel descem suavemente até `#oferta`. Somente o botão principal “Comprar agora” dessa seção abre https://pay.kiwify.com.br/Sb1GbMt. A preferência de movimento reduzido é respeitada. O botão de copiar prompt e as perguntas frequentes funcionam sem dependências.
 
 ## Netlify
 
-No site existente, conecte este repositório, selecione a branch `main`, deixe o diretório base e o comando de build vazios e use `.` como diretório de publicação. O `netlify.toml` define a publicação a partir da raiz. Se o site foi enviado manualmente, faça um novo deploy da pasta que contém `index.html`.
+Repositório: andersonx553-beep/EbookADM. Branch: main. Diretório base vazio; comando de build vazio; diretório de publicação: `.`. O arquivo `netlify.toml` configura a raiz e redireciona os dois nomes HTML anteriores e o caminho `/administracao-com-ia` para `/`. A página antiga foi removida do checkout.
 
-Os caminhos `/`, `/index.html`, `/administracao-com-ia` e o endereço HTML antigo abrem a página. Os dois últimos redirecionam para `/` no Netlify. Não há regras genéricas que escondam erros 404.
+Com deploy automático habilitado, o push na main dispara a publicação. Para deploy manual, envie a raiz contendo index.html e netlify.toml. Não envie apenas uma pasta vazia ou a pasta de produção do PDF. O produto pago não está neste repositório.
 
 ## GitHub Pages
 
-Em Settings → Pages → Build and deployment, selecione **GitHub Actions**. O workflow `.github/workflows/pages.yml` publica a cada push na branch `main`; depois da ativação, também pode ser iniciado em Actions → Publicar GitHub Pages → Run workflow.
+O workflow publica somente index.html e .nojekyll. Configure Settings → Pages → GitHub Actions. Os redirects do netlify.toml são exclusivos do Netlify; no Pages, use a raiz do projeto.
 
-Endereço esperado após a publicação: https://andersonx553-beep.github.io/EbookADM/
+## Desenvolvimento
 
-## Verificação local
-
-Execute `python3 -m http.server 8080 --directory /workspace/EbookADM` e confira a página inicial, as imagens, as perguntas frequentes e o botão de copiar prompt. Em tarefas na nuvem, use o checkout existente; não é necessário criar worktrees.
-
-## Pagamento
-
-Nas duas páginas, os botões de chamada levam à seção `#oferta`. Apenas o botão principal “Comprar agora” dentro dessa seção abre o checkout Kiwify: https://pay.kiwify.com.br/cRhBmbk. O pagamento e a entrega do produto devem estar configurados na Kiwify.
+Use o checkout existente; não é necessário criar worktrees. Execute `python3 -m http.server 8080 --directory /workspace/EbookADM` para verificar localmente.
